@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color: orange;
+}
+
+.mobile,
+.tablet,
+.pc{
+    font-size: 100px;
+    margin: auto;
+    color: #fff;
+    display: none;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 739px){
+    .mobile{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 740px ) and ( max-width: 1023px){
+    .tablet{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .pc{
+        display: block;
+    }
+}
+
